@@ -4,7 +4,7 @@ FROM ubuntu:latest
 # Set environment variables
 ## PHP Version (php5.6, php7.0 php7.1)
 ENV PHP php7.1
-ENV EXTRA_PACKAGES php7.1-xml php7.1-mbstring php7.1-mcrypt php7.1-xdebug
+ENV EXTRA_PACKAGES php7.1-xml php7.1-mbstring php7.1-mcrypt php7.1-xdebug php7.1-zip
 ENV PRE_PACKAGES curl git
 ENV TIMEZONE Europe/Amsterdam
 
