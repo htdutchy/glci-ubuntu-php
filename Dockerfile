@@ -2,7 +2,7 @@
 FROM ubuntu:latest
 
 # Set environment variables
-ENV EXTRA_PACKAGES
+ENV EXTRA_PACKAGES ""
 ENV TIMEZONE Europe/Amsterdam
 
 # Prep ubuntu image
