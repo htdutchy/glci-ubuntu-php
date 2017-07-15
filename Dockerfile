@@ -5,7 +5,7 @@ FROM ubuntu:latest
 ## PHP Version (php5.6, php7.0 php7.1)
 ENV PHP php7.1
 ENV EXTRA_PACKAGES php7.1-xml php7.1-mbstring php7.1-mcrypt php7.1-xdebug
-ENV PRE_PACKAGES ""
+ENV PRE_PACKAGES curl git
 ENV TIMEZONE Europe/Amsterdam
 
 # Prep ubuntu image
@@ -13,7 +13,7 @@ RUN export LANG=C.UTF-8 && \
     export DEBIAN_FRONTEND=noninteractive && \
     echo "${TIMEZONE}" > /etc/timezone && \
     apt-get -y update && \
-    apt-get -y install software-properties-common git && \
+    apt-get -y install software-properties-common && \
     add-apt-repository -y ppa:ondrej/php && \
     apt-get -y update
 
