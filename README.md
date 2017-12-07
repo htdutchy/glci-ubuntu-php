@@ -12,18 +12,18 @@ The standard `php` command defaults to PHP 7.1
 
 ### Packages installed by default:
 **PHP 5.6**  
-`php5.6 php5.6-xml php5.6-mbstring php5.6-mcrypt php5.6-xdebug php5.6-zip`  
+`php5.6 php5.6-mysql php5.6-xml php5.6-mbstring php5.6-mcrypt php5.6-xdebug php5.6-zip`  
 **PHP 7.0**  
-`php7.0 php7.0-xml php7.0-mbstring php7.0-mcrypt php7.0-xdebug php7.0-zip`  
+`php7.0 php7.0-mysql php7.0-xml php7.0-mbstring php7.0-mcrypt php7.0-xdebug php7.0-zip`  
 **PHP 7.1**  
-`php7.1 php7.1-xml php7.1-mbstring php7.1-mcrypt php7.1-xdebug php7.1-zip`  
+`php7.1 php7.1-mysql php7.1-xml php7.1-mbstring php7.1-mcrypt php7.1-xdebug php7.1-zip`  
 **Extra**  
 `curl wget git`  
 
 ### Installing extra packages:
 Set Environment variable `EXTRA_PACKAGES` to the packages you want to install, separated with spaces.
 
-    EXTRA_PACKAGES = "svn python php7.1-mysql"
+    EXTRA_PACKAGES = "svn python"
 
 ### Example .gitlab-cy.yml
     image: htdutchy/glci-ubuntu-php:latest
